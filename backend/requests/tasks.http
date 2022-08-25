@@ -1,0 +1,34 @@
+@api =http://localhost:3002/infol
+
+GET  {{api}}
+
+###
+GET  {{api}}/4
+
+###
+GET {{api}}/count
+
+
+###
+POST {{api}}
+Content-Type: application/json
+
+{
+    "proceso": "Ejectutivo, Juz 9 Civil Circiuto",
+    "partes": "Ana Muñoz vs Javier Pinzon",
+    "descripcion": "Rechazo de demanda"
+}
+
+
+###
+DELETE {{api}}/
+
+###
+PUT  {{api}}/5
+Content-Type: application/json
+
+{
+    "proceso": "modelo, isertar datos del proceso",
+    "partes": "modelo, demandante vs demandado",
+    "descripcion": "modelo, son autos, estados y demás"
+}
